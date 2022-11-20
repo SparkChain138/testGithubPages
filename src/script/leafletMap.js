@@ -1,3 +1,5 @@
+console.log("hoge")
+
 const map = L.map('map').setView([35.604399, 139.683831], 30);
 
 L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
