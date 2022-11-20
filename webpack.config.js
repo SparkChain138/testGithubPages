@@ -5,7 +5,10 @@ const WebpackWatchedGlobEntries = require("webpack-watched-glob-entries-plugin")
 
 // エントリーポイントとして、jsファイルを設定
 const entries = WebpackWatchedGlobEntries.getEntries(
-  [path.resolve(__dirname, "./src/script/**/*.js")],
+  // ページを複数作る場合はその分エントリーポイントを追加すること.
+  // その際,同名のscss,htmlファイルが必要となる
+  // [path.resolve(__dirname, "./src/script/**/*.js")], 
+  [path.resolve(__dirname, "./src/script/index.js")],
   {}
 )();
 

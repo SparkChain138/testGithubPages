@@ -1,0 +1,10 @@
+const map = L.map('map').setView([35.604399, 139.683831], 30);
+
+L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>'
+}).addTo(map);
+
+//マーカー表示の記述
+L.marker([35.604399, 139.683831]).addTo(map)
+  .bindPopup('ここにいます')
+  .openPopup();
