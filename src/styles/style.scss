@@ -1,0 +1,53 @@
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #555;
+}
+
+.button {
+  margin-top: 50px;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  background: #fff;
+
+  a {
+    display: block;
+    color: #555;
+    padding: 20px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+#suggest {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCFF;
+  font-size: 90%;
+  width: 200px;
+}
+
+#suggest div {
+  display: block;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#suggest div.select {
+  /* キー上下で選択した場合のスタイル */
+  color: #FFFFFF;
+  background-color: #3366FF;
+}
+
+#suggest div.over {
+  /* マウスオーバ時のスタイル */
+  background-color: #99CCFF;
+}
